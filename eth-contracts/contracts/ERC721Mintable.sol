@@ -1,10 +1,10 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.7;
 
 import 'openzeppelin-solidity/contracts/utils/Address.sol';
-import 'openzeppelin-solidity/contracts/drafts/Counters.sol';
-import 'openzeppelin-solidity/contracts/math/SafeMath.sol';
+import 'openzeppelin-solidity/contracts/utils/Counters.sol';
 import 'openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol';
-import "./Oraclize.sol";
+import "./Provable.sol";
 
 contract Ownable {
     //  TODO's
@@ -413,7 +413,7 @@ contract ERC721Enumerable is ERC165, ERC721 {
     }
 }
 
-contract ERC721Metadata is ERC721Enumerable, usingOraclize {
+contract ERC721Metadata is ERC721Enumerable, usingProvable {
     
     // TODO: Create private vars for token _name, _symbol, and _baseTokenURI (string)
 
