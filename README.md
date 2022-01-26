@@ -25,7 +25,7 @@ The capstone will build upon the knowledge you have gained in the course in orde
 
 | Criteria | Meets Specifications | Completed |
 | --- | --- | --- |
-| ERC721 Mintable Contract | Student completes the boilerplate ERC721 Mintable Contract in `ERC721Mintable.sol` |  |
+| ERC721 Mintable Contract | Student completes the boilerplate ERC721 Mintable Contract in `ERC721Mintable.sol` | ✅ |
 | ERC721 Mintable Contract Test Cases | Student writes and passes the test cases in `TestERC721Mintable.js` |  |
 | ERC721 Mintable Contract Zokrates Test | Student writes and passes the test cases in `TestSquareVerifier.js` |  |
 | ERC721 Mintable Contract Zokrates Test Cases | Student writes and passes the test cases in `TestSolnSquareVerifier.js` |  |
