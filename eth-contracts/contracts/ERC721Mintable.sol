@@ -319,7 +319,7 @@ contract ERC721Enumerable is ERC165, ERC721 {
     /**
      * @dev Constructor function
      */
-    constructor () public {
+    constructor () {
         // register the supported interface to conform to ERC721Enumerable via ERC165
         _registerInterface(_INTERFACE_ID_ERC721_ENUMERABLE);
     }
@@ -485,7 +485,7 @@ contract ERC721Metadata is ERC721Enumerable, usingProvable {
      */
 
 
-    constructor (string memory name, string memory symbol, string memory baseTokenURI) public {
+    constructor (string memory name, string memory symbol, string memory baseTokenURI) {
         // set instance var values
         _name = name;
         _symbol = symbol;
@@ -536,7 +536,7 @@ contract ERC721Metadata is ERC721Enumerable, usingProvable {
 
 contract RealEstateToken is ERC721Metadata("RealEstateToken", "RET", "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/"){
 
-    function mint(address to,uint tokenId) public onlyOwner returns(bool){
+    function mint(address to, uint tokenId) public onlyOwner returns(bool){
         super._mint(to,tokenId);
         super.setTokenURI(tokenId);
         return true;
