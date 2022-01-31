@@ -530,7 +530,7 @@ contract ERC721Metadata is ERC721Enumerable, usingProvable {
 //      - make the base token uri: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/
 //  2) create a public mint() that does the following:
 //      -can only be executed by the contract owner
-//      -takes in a 'to' address, tokenId, and tokenURI as parameters
+//      -takes in a 'to' address, tokenId, and tokenURI as parameters (What's with the tokenURI though, it's not tallying with the setTokenURI)
 //      -returns a true boolean upon completion of the function
 //      -calls the superclass mint and setTokenURI functions
 
