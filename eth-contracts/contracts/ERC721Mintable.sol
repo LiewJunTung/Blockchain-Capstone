@@ -495,15 +495,15 @@ contract ERC721Metadata is ERC721Enumerable, usingProvable {
     }
 
     // create external getter functions for name, symbol, and baseTokenURI
-    function name() external view returns (string memory){
+    function getName() external view returns (string memory){
         return _name;
     }
 
-    function symbol() external view returns (string memory){
+    function getSymbol() external view returns (string memory){
         return _symbol;
     }
 
-    function baseTokenURI() external view returns (string memory){
+    function getBaseTokenURI() external view returns (string memory){
         return _baseTokenURI;
     }
 
