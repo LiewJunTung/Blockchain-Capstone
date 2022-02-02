@@ -5,3 +5,30 @@
 
     
 // Test verification with incorrect proof
+
+const SquareVerifier = artifacts.require('SquareVerifier');
+const proof = require('../../zokrates/code/square/proof.json');
+
+
+contract('TestERC721Mintable', accounts => {
+
+    const accountOne = accounts[0];
+
+
+    beforeEach(async function () { 
+        this.squareVerifier = await SquareVerifier.new({from: accountOne});
+    })
+
+    it("able to do verification with correct proof", async function() {
+        //console.log(SquareVerifier)
+        const result = await this.squareVerifier.verify(
+            proof['proof']['a'][0], 
+            proof['proof']['a'][1], 
+            proof['proof']['b'][0], 
+            proof['proof']['b'][1], 
+            proof['proof']['c'][0], 
+            proof['proof']['c'][1], 
+            proof['inputs'], {from: accountOne})
+        assert.isTrue(result)
+    })
+});
