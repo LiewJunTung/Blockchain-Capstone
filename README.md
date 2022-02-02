@@ -26,17 +26,17 @@ The capstone will build upon the knowledge you have gained in the course in orde
 | Criteria | Meets Specifications | Completed |
 | --- | --- | --- |
 | ERC721 Mintable Contract | Student completes the boilerplate ERC721 Mintable Contract in `ERC721Mintable.sol` | ✅ |
-| ERC721 Mintable Contract Test Cases | Student writes and passes the test cases in `TestERC721Mintable.js` |  |
-| ERC721 Mintable Contract Zokrates Test | Student writes and passes the test cases in `TestSquareVerifier.js` |  |
-| ERC721 Mintable Contract Zokrates Test Cases | Student writes and passes the test cases in `TestSolnSquareVerifier.js` |  |
+| ERC721 Mintable Contract Test Cases | Student writes and passes the test cases in `TestERC721Mintable.js` | ✅ |
+| ERC721 Mintable Contract Zokrates Test | Student writes and passes the test cases in `TestSquareVerifier.js` | ✅ |
+| ERC721 Mintable Contract Zokrates Test Cases | Student writes and passes the test cases in `TestSolnSquareVerifier.js` | ✅ |
 
 ## Zokrates
 
 | Criteria | Meets Specifications | Completed |
 | --- | --- | --- |
 | Zokrates program written using DSL | Student completes the Zokrates proof in square.code by adding the variable names in `square.code` | ✅ |
-| Zokrates Test Cases | Student completes test contract in `SolnSquareVerifier.sol` | |
-| Zokrates Test Cases | Student writes and passes the test cases in `TestSolnSquareVerifier.js` | |
+| Zokrates Test Cases | Student completes test contract in `SolnSquareVerifier.sol` | ✅ |
+| Zokrates Test Cases | Student writes and passes the test cases in `TestSolnSquareVerifier.js` | ✅ |
 
 ## OpenSea Marketplace
 
