@@ -18,7 +18,7 @@ The capstone will build upon the knowledge you have gained in the course in orde
 
 | Criteria | Meets Specifications | Completed |
 | --- | --- | --- |
-| Write Up | Student includes a README to explain how to test their code. |  |
+| Write Up | Student includes a README to explain how to test their code. | ✅ |
 | Write Up | Student provides Contract Addresses, Contract Abi's, OpenSea MarketPlace Storefront link's. | ✅ |
 
 ## ERC 721
@@ -52,6 +52,7 @@ The capstone will build upon the knowledge you have gained in the course in orde
 1. Update the contract address in `mint.js`
 1. Update the index ID in `mint()` function of the `mint.js`, E.G. 1-5
 1. Mint token via `node mint.js` for different tokens
+1. Test code via `truffle test`
 
 ## Deployment
 
