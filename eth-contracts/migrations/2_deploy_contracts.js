@@ -4,6 +4,11 @@ var SolnSquareVerifier = artifacts.require("./SolnSquareVerifier.sol");
 
 module.exports = function(deployer) {
   deployer.deploy(SquareVerifier).then(()=>{
-    deployer.deploy(SolnSquareVerifier, SquareVerifier.address, "RealEstateToken", "RET", "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/");
+    deployer.deploy(SolnSquareVerifier, 
+      SquareVerifier.address, 
+      "UdacityRealEstateToken", 
+      "URET", 
+      "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/");
+    
   })
 };
