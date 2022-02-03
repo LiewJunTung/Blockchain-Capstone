@@ -521,6 +521,7 @@ contract ERC721Metadata is ERC721Enumerable, usingProvable {
     // require the token exists before setting
      function setTokenURI(uint tokenId) internal {
         require(_exists(tokenId), "Require the token exists before setting");
+        uint2str(tokenId);
         _tokenURIs[tokenId] = strConcat(_baseTokenURI, uint2str(tokenId));
     }
 }
@@ -540,7 +541,7 @@ contract ERC721MintableComplete is ERC721Metadata {
 
     function mint(address to, uint tokenId) public onlyOwner returns(bool){
         super._mint(to,tokenId);
-        // super.setTokenURI(tokenId);
+        setTokenURI(tokenId);
         return true;
     }
 
