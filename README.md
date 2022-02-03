@@ -74,6 +74,11 @@ https://rinkeby.etherscan.io/address/0x06cc9a867e959db12b6f0a65afd470691e0e06dd
 ### Storefront
 https://testnets.opensea.io/collection/udacity-capstone-real-estate-nft
 
+### Contract Address
+0x114bb3ba12b3934c3c9c3027c3e33da85a6639f4
+
+### Contract Store Front 
+https://testnets.opensea.io/0x114bb3ba12b3934c3c9c3027c3e33da85a6639f4
 
 ### ABI
 ```json
