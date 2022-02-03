@@ -52,7 +52,7 @@ The capstone will build upon the knowledge you have gained in the course in orde
 1. Update the contract address in `mint.js`
 1. Update the index ID in `mint()` function of the `mint.js`, E.G. 1-5
 1. Mint token via `node mint.js` for different tokens
-1. Test code via `truffle test`
+1. Update the devMnemonic in `truffle-config.js`, Test code via `truffle test`
 
 ## Deployment
 
