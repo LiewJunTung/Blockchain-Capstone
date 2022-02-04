@@ -74,6 +74,13 @@ https://rinkeby.etherscan.io/address/0xA6f25Dd24D5860B4920b215e580df591f4Ca5219
 
 ### Contract Store Front 
 https://testnets.opensea.io/collection/udacity-real-estate-capstone-token-jt
+
+## Accounts
+1. 0x9d98C4ca7fcb13352f540fA19F818CcB96d13f30
+1. 0x6620A9243B0FCF865CF55fD69628b90f64B74a73
+1. 0x9f66E03F815565DFfF4Cd83cf7519ddF4bee6beC
+1. 0x0696d1870e2E0c4BE8c29e2D63c9EE6d1AbD9876
+1. 0x4ac75Ce352bCC6F3503D3921aC89C25D9D453D9F
 ### ABI
 ```json
 [
