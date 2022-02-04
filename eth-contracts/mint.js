@@ -1,6 +1,6 @@
 const fs = require("fs");
 const ownerAddress = "0x114bB3Ba12B3934C3C9c3027c3e33DA85A6639f4";
-const contractAddress = "0x06cc9a867e959db12b6f0a65afd470691e0e06dd";
+const contractAddress = "0xA6f25Dd24D5860B4920b215e580df591f4Ca5219";
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const web3 = require("web3");
 const contractAbi = require("./build/contracts/SolnSquareVerifier.json");

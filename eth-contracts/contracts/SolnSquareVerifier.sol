@@ -55,10 +55,10 @@ contract SolnSquareVerifier is ERC721MintableComplete {
     }
 
     // Create a function to add the solutions to the array and emit the event
-    function addSolution(address _to, uint256 _index) internal {
+    function addSolution(address _to, uint256 _index, bytes32 key) internal {
         Solution memory solution = Solution(_index, _to);
         solutions.push(solution);
-
+        uniqueSubmittedSolutions[key] = solution;
         emit SolutionAdded(_to, _index);
     }
 
@@ -75,7 +75,7 @@ contract SolnSquareVerifier is ERC721MintableComplete {
         uint256 cY,
         uint256[2] memory input
     ) public {
-        bytes32 key = keccak256(abi.encode(aX, aY, bX, bY, cX, cY, input));
+        bytes32 key = keccak256(abi.encode(tokenId, aX, aY, bX, bY, cX, cY, input));
         //  - make sure the solution is unique (has not been used before)
         require(
             uniqueSubmittedSolutions[key].to == address(0),
@@ -85,7 +85,7 @@ contract SolnSquareVerifier is ERC721MintableComplete {
         bool isProved = nSquareVerifier.verify(aX, aY, bX, bY, cX, cY, input);
         require(isProved, "proof verification: Invalid");
         //  - make sure you handle metadata as well as tokenSupply
-        addSolution(_to, tokenId);
+        addSolution(_to, tokenId, key);
         mint(_to, tokenId);
     }
 }

@@ -35,4 +35,22 @@ contract('TestERC721Mintable', accounts => {
         const tokenBalance = await this.contract.balanceOf.call(accountTwo, { from: accountTwo })
         assert.equal(tokenBalance.toNumber(), 1)
     })
+
+    it("able to mint multiple new NFT only after the solution has been verified", async function() {
+        for (let i = 1; i < 5; i++) {
+            const result = await this.contract.mintNewNFT(accountTwo,
+                i, 
+               proof['proof']['a'][0], 
+               proof['proof']['a'][1], 
+               proof['proof']['b'][0], 
+               proof['proof']['b'][1], 
+               proof['proof']['c'][0], 
+               proof['proof']['c'][1], 
+               proof['inputs'],
+               {from: accountOne})
+           const tokenBalance = await this.contract.balanceOf.call(accountTwo, { from: accountTwo })
+           assert.equal(tokenBalance.toNumber(), i)
+        }
+       
+    })
 });
